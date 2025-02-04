@@ -6,6 +6,7 @@ import About from '@/pages/about/About'
 import { Blog } from '@/pages/blog/Blog'
 import Contact from '@/pages/contact/Contact'
 import NotFound from '@/pages/notFound/NotFound'
+import Detail from '../pages/details/Detail'
 
 function MainRoutuer() {
 
@@ -17,6 +18,7 @@ function MainRoutuer() {
                 <Route path='/blog' element={<Blog />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='*' element={<NotFound />} />
+                <Route path='/product/:id' element={<Detail />} />
             </Routes>
         </>
     )

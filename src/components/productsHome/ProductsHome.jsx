@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { request } from "@/api";
+import { useNavigate } from 'react-router-dom';
+
 
 const ProductsHome = () => {
     const [products, setProducts] = useState([]);
+    const navigate = useNavigate()
+
 
     useEffect(() => {
         request
@@ -26,8 +30,9 @@ const ProductsHome = () => {
                 <div>
                     <div className="grid grid-cols-4 gap-8 mt-20 max-[950px]:grid-cols-2 max-[500px]:grid-cols-1 max-[500px]:text-center">
                         {products.map((product) => (
-                            <div key={product.id} className="p-4">
+                            <div key={product.id} className="p-4 cursor-pointer">
                                 <img
+                                    onClick={() => navigate(`/product/${product.id}`)}
                                     src={product.image}
                                     className="h-[250px] max-[500px]:mx-auto"
                                     alt={product.title}

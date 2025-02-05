@@ -6,9 +6,9 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
-const HeaderContact = () => {
+const HeaderContact = ({ bgColor = '#252B42' }) => {
     return (
-        <div className='bg-[#252B42] h-16 flex items-center max-[1120px]:hidden'>
+        <div className={`bg-[${bgColor}] h-16 flex items-center max-[1120px]:hidden`}>
             <div className='header__container'>
                 <div className='text-white font-bold flex items-center justify-between'>
                     <div className='flex gap-5'>
@@ -16,11 +16,11 @@ const HeaderContact = () => {
                         <span className='flex gap-1 items-center'><MdOutlineMail className='text-xl' />michelle.rivera@example.com</span>
                     </div>
                     <div>
-                        <span>Follow Us  and get a chance to win 80% off</span>
+                        <span>Follow Us and get a chance to win 80% off</span>
                     </div>
                     <div className='flex gap-3 items-center'>
                         <div>
-                            <span>Follow Us  :</span>
+                            <span>Follow Us :</span>
                         </div>
                         <div className='flex gap-2 text-2xl'>
                             <FaInstagram />
@@ -30,7 +30,6 @@ const HeaderContact = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )

@@ -19,12 +19,15 @@ const Detail = () => {
                 setData(res.data);
                 setLoading(false);
             })
-            .catch(() => setLoading(false)); // Handle errors
+            .catch(() => setLoading(false));
     }, [id]);
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    })
 
     return (
         <>
-            <HeaderContact />
+            <HeaderContact bgColor = '#23856D' />
             <Header />
             <div className='container'>
                 {loading ? (

@@ -5,9 +5,7 @@ import React from 'react'
 export const Blog = () => {
     return (
         <>
-            <Header />
-            <div>Blog</div>
-            <Footer />
+          
         </>
     )
 }

@@ -27,8 +27,8 @@ const Detail = () => {
 
     return (
         <>
-            <HeaderContact bgColor = '#23856D' />
-            <Header />
+        
+           
             <div className='container'>
                 {loading ? (
                     <div className='flex justify-around items-center py-10 animate-pulse'>
@@ -87,7 +87,7 @@ const Detail = () => {
                     </div>
                 )}
             </div>
-            <Footer />
+           
         </>
     );
 };

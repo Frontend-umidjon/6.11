@@ -5,8 +5,7 @@ import Footer from '@/components/footer/Footer'
 const Contact = () => {
     return (
         <>
-            <Header />
-            <Footer />
+         
         </>
     )
 }

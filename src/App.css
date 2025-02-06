@@ -1,9 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+   font-display: swap; 
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../src/fonts/montserrat-v29-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+ }
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Montserrat", serif;
+   font-family: "Montserrat", sans-serif;
 }
 html{
    scroll-behavior: smooth;
@@ -35,4 +42,12 @@ li {
 }
 button {
    border: none;
+}
+.hover__effect {
+   transition: all 0.3s ease-in-out;
+   border: 1px solid transparent;
+}
+.hover__effect:hover {
+   border: 1px solid black;
+   color: black;
 }

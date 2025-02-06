@@ -6,8 +6,7 @@ const about = () => {
     return (
 
         <>
-            <Header />
-            <Footer />
+            
         </>
     )
 }

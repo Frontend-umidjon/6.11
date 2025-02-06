@@ -46,7 +46,7 @@ const Footer = () => {
                             <h3 className='font-bold mb-5'>Get In Touch</h3>
                             <form action="" className='flex items-center relative'>
                                 <input className='w-full bg-[#F9F9F9] border-2 border-[#EBF0F94D] py-5 px-5 rounded rounded-r-none border-r-0 focus:outline-[#23A6F0]' type="email" placeholder='Your email' />
-                                <button className='bg-[#23A6F0] border-2 border-white text-white py-5 px-5 rounded mr-1 absolute right-[-5px]'>Subscribe</button>
+                                <button className='bg-[#23A6F0] border-2 border-white text-white py-5 px-5 rounded mr-1 absolute right-[-5px]  hover:bg-white hover:text-[#23A6F0] duration-300'>Subscribe</button>
                             </form>
                             <p className='text-[#737373] text-xs font-medium mt-2'>Lore imp sum dolor Amit</p>
                         </div>

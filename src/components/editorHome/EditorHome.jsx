@@ -12,37 +12,23 @@ const EditorHome = () => {
                     <h3 className='text-2xl font-bold text-[#252B42]'>EDITOR’S PICK</h3>
                     <p className='text-[#737373]'>Problems trying to resolve the conflict between </p>
                 </div>
-                <div className='h-[500px]  grid grid-cols-2 self-center gap-8 mt-12 max-[950px]:grid-cols-1 max-[950px]:h-auto '>
-                    <div style={{ backgroundImage: `url(${Editor1})`, backgroundSize: 'cover', height: '500px' }}>
-                        <div className='flex  items-end h-full p-7'>
-                            <button className='py-3 px-16 bg-white font-bold'>Men</button>
-                        </div>
+                <div className='grid grid-cols-4 gap-[15px]  '>
+                    <div  style={{backgroundImage:`url(${Editor1})`,backgroundSize:'cover' , backgroundPosition:'center' } } className='border min-h-[242px] row-start-1 row-end-3  col-start-1 col-end-3    flex items-end justify-start'>
+                        <button className='mb-[31px] ml-[16px]  border-transparent  py-4 px-8 bg-white uppercase text-[#252B42] font-[700] block items-end  hover:bg-transparent hover:text-white border-white  hover__effect '>Men</button>
                     </div>
-
-                    <div className='grid grid-cols-2 gap-8 self-center max-[500px]:grid-cols-1'>
-                        <div style={{ backgroundImage: `url(${Editor2})`, backgroundSize: 'cover', height: '500px' }}>
-                            <div className='flex  items-end h-full p-7'>
-                                <button className='py-3 px-16 bg-white font-bold'>WOMEN</button>
-                            </div>
-                        </div>
-                        <div className='grid gap-4 self-center '>
-                            <div style={{ backgroundImage: `url(${Editor3})`, backgroundSize: 'cover', height: '240px', }}>
-                                <div className='flex  items-end h-full p-5'>
-                                    <button className='py-3 px-6 bg-white font-bold'>ACCESSORIES</button>
-                                </div>
-                            </div>
-                            <div style={{ backgroundImage: `url(${Editor4})`, backgroundSize: 'cover', height: '240px' }}>
-                                <div className='flex  items-end h-full p-5'>
-                                    <button className='py-3 px-14 bg-white font-bold'>KIDS</button>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div  style={{backgroundImage:`url(${Editor2})`,backgroundSize:'cover' , backgroundPosition:'center' } } className='border min-h-[242px] row-start-1 row-end-3  flex items-end justify-start'>
+                        <button className='mb-[31px] ml-[16px]  border-transparent  py-4 px-8 bg-white uppercase text-[#252B42] font-[700] block items-end  hover:bg-transparent hover:text-white border-white  hover__effect '>woMen</button>
                     </div>
-                </div>
+                    <div  style={{backgroundImage:`url(${Editor3})`,backgroundSize:'cover' , backgroundPosition:'center' } } className='border min-h-[242px]  flex items-end justify-start'>
+                        <button className='mb-[31px] ml-[16px]  border-transparent  py-4 px-8 bg-white uppercase text-[#252B42] font-[700] block items-end  hover:bg-transparent hover:text-white border-white  hover__effect '>Accessories</button>
+                    </div>
+                    <div  style={{backgroundImage:`url(${Editor4})`,backgroundSize:'cover' , backgroundPosition:'center' } } className='border min-h-[242px]  flex items-end justify-start'>
+                        <button className='mb-[31px] ml-[16px]  border-transparent  py-4 px-8 bg-white uppercase text-[#252B42] font-[700] block items-end  hover:bg-transparent hover:text-white border-white  hover__effect '>Kids</button>
+                    </div>
+                </div> 
             </div>
         </div>
-    )
+    ) 
 }
 
 export default EditorHome

@@ -16,8 +16,8 @@ const SummerHome = () => {
                         <p className='text-xl text-[#737373] py-8 font-medium max-w-[376px] max-[950px]:mx-auto'>We know how large objects will act,
                             but things on a small scale.</p>
                         <div className='flex gap-[10px] max-[950px]:justify-center mb-6 max-[500px]:text-[40px]'>
-                            <button className='py-4 px-10 max-[404px]:px-6 max-[404px]:py-3 bg-[#2DC071] text-sm font-bold rounded-md text-white'>BUY NOW</button>
-                            <button className='py-4 px-10 max-[404px]:px-6 max-[404px]:py-3 bg-inherit text-sm font-bold rounded-md text-[#2DC071] border-[#2DC071] border-2 border-solid'>READ MORE</button>
+                            <button className='py-4 px-10 max-[404px]:px-6 max-[404px]:py-3 bg-[#2DC071] text-sm font-bold rounded-md text-white hover:bg-inherit hover:text-[#2DC071] hover:border-[#2DC071] duration-300'>BUY NOW</button>
+                            <button className='py-4 px-10 max-[404px]:px-6 max-[404px]:py-3 bg-inherit text-sm font-bold rounded-md text-[#2DC071] border-[#2DC071] border-2 border-solid hover:bg-[#2DC071] hover:text-white hover:border-white duration-300'>READ MORE</button>
 
                         </div>
 
